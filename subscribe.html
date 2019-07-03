@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SUBSCRIBE - BEAUTY MASTER</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/cooking-master.css">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=B612' rel='stylesheet'>
+	<link href="css/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<script type="text/javascript" src="js/efek-website.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<div id="navbar" class="navigasi-bar sticky-top">
+	    <nav class="navbar navbar-expand-lg">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="#">
+	              <img id="logo" class="margin-logo" src="images/logo.png" alt="logo" width="100px">
+	            </a>
+	        </div>
+	        <div class="navbar-container">
+	          <ul>
+	            <li class="nav-link">
+	              <a class="btn" href="index.html">Home</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="video.html">Video</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="blog.html">Blog</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="#">About Us</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="#" data-toggle="modal" data-target="#modalLogin">Log In</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <button class="btn btn-subscribe"><a href="subscribe.html"> Subscribe </a></button>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+  	</div>
+
+	<!-- The Modal -->
+  	<div class="modal fade" id="modalLogin" role="dialog">
+        <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- MODAL LOGIN HEADER -->
+				<div class="modal-header">
+					<div class="row">
+						<h3 class="modal-title w-100 font-weight-bold text-center">LOGIN</h3>
+						<p>Silakan masukkan email dan password akun anda untuk mengakses konten ekslusif</p>
+					</div>
+					
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    	<span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- MODAL LOGIN BODY -->
+                <div class="modal-body mx-3">
+                	<div class="form-group">
+                		<input type="text" name="username" id="username" class="form-control input-lg" placeholder="Email" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
+                	</div>
+                	<div class="float-right"><a href="#" style="font-size: 12px;">lupa kata sandi?</a></div>
+                </div>
+                <!-- MODAL LOGIN FOOTER-->
+                <div class="modal-footer">
+                	<button class="btn btn-block btn-lg modal-regis" data-toggle="modal" data-target="#modalRegis">Registrasi</button>
+                	<br>
+                	<input type="submit" name="login" class="btn btn-block btn-lg btn-login" value="Login">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRegis" role="dialog">
+        <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- MODAL LOGIN HEADER -->
+				<div class="modal-header">
+					<div class="row">
+						<h3 class="modal-title w-100 font-weight-bold text-center">REGISTRASI</h3>
+						<p>Silakan mengisi data diri anda untuk melakukan pendaftaran menjadi member dan mendapatkan akses ke dalam konten eksklusif</p>
+					</div>
+					
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    	<span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- MODAL LOGIN BODY -->
+                <div class="modal-body mx-3">
+                	<div class="form-group">
+                		<input type="text" name="fullname" id="fullname" class="form-control input-lg" placeholder="Full Name" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="text" name="noTelepon" id="noTelepon" class="form-control input-lg" placeholder="Phone Number" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="text" name="email" id="email" class="form-control input-lg" placeholder="Email" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
+                	</div>
+                </div>
+                <!-- MODAL LOGIN FOOTER-->
+                <div class="modal-footer">
+                	<input type="submit" name="registrasi" class="btn btn-block btn-lg btn-login" value="Registrasi">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    	<div class="background-subscribe">
+    		<div class="container">
+    			<div class="subscribe-header">
+	    			<center>
+	    				<strong style="font-size: 60px;">Subscribe Beauty Master</strong>
+	    				<br>
+	    				<strong style="font-size: 30px;">dan Dapatkan Konten Ekslusivenya</strong>
+	    			</center>
+	    		</div>
+	    		<div class="subscribe-body">
+	    			<div class="row">
+	    				<div class="col-md-4">
+		    				<div class="card shadow box-subscribe">
+		    					<center>
+		    						<img class="pricing-image" src="images/1-bulan.png" width="200">
+		    						<div class="bawah-pricing-image">
+		    							<h3>1 Bulan Menjadi Membership</h3>
+			    						<h5>Coba 1 Bulan Jika Anda Ragu</h5>
+			    						<h5 class="tidak-diskon">.</h5>
+			    						<h4>Rp. 200.000,00</h4>
+			    						<a class="btn btn-lg btn-daftar" href="#">Daftar</a>
+		    						</div>
+		    					</center>
+		    				</div>
+		    			</div>
+		    			<div class="col-md-4">
+		    				<div class="card shadow box-subscribe">
+		    					<center>
+		    						<img class="pricing-image" src="images/3-bulan.png" width="200">
+		    						<div class="bawah-pricing-image">
+		    							<h3>3 Bulan Menjadi Membership</h3>
+			    						<h5>Lebih hemat 150 ribu</h5>
+			    						<h5 class="coret">Rp.600.000,00</h5>
+			    						<h4>Rp. 450.000,00</h4>
+			    						<a class="btn btn-lg btn-daftar" href="#">Daftar</a>
+		    						</div>
+		    					</center>
+		    				</div>
+		    			</div>
+		    			<div class="col-md-4">
+		    				<div class="card shadow box-subscribe">
+		    					<center>
+		    						<img class="pricing-image" src="images/6-bulan.png" width="200">
+		    						<div class="bawah-pricing-image">
+		    							<h3>6 Bulan Menjadi Membership</h3>
+			    						<h5>Paling hemat! Diskon 450 ribu</h5>
+			    						<h5 class="coret">Rp.1.200.000,00</h5>
+			    						<h4>Rp. 750.000,00</h4>
+			    						<a class="btn btn-lg btn-daftar" href="#">Daftar</a>
+		    						</div>
+		    					</center>
+		    				</div>
+		    			</div>
+	    			</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div>
+    	<div class="keuntungan-subscribe">
+    		<div class="container">
+    			<div class="header-keuntungan">
+    				<h2>dengan menjadi membership,</h2>
+    				<h2>anda akan mendapatkan :</h2>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-3">
+    					<div class="card shadow box-keuntungan">
+    						<img class="pricing-image" src="Images/keuntungan-logo.png" width="150">
+    						<div class="judul-keuntungan">
+    							<h3>Video Premium</h3>
+    						</div>
+    						<div class="isi-keuntungan">
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="col-md-3">
+    					<div class="card shadow box-keuntungan">
+    						<img class="pricing-image" src="Images/keuntungan-logo.png" width="150">
+    						<div class="judul-keuntungan">
+    							<h3>Video Premium</h3>
+    						</div>
+    						<div class="isi-keuntungan">
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="col-md-3">
+    					<div class="card shadow box-keuntungan">
+    						<img class="pricing-image" src="Images/keuntungan-logo.png" width="150">
+    						<div class="judul-keuntungan">
+    							<h3>Video Premium</h3>
+    						</div>
+    						<div class="isi-keuntungan">
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="col-md-3">
+    					<div class="card shadow box-keuntungan">
+    						<img class="pricing-image" src="Images/keuntungan-logo.png" width="150">
+    						<div class="judul-keuntungan">
+    							<h3>Video Premium</h3>
+    						</div>
+    						<div class="isi-keuntungan">
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div>
+		<div class="testimoni-background">
+			<div class="container">
+				<div  class="header-testimoni">
+					<h2>testimonial</h2>
+				</div>
+				<div class="body-testimoni">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card shadow box-testimoni">
+								<figure class="figure">
+									<img class="d-block mx-auto foto-testimoni" src="Images/foto-default-user.jpg" width="150">
+								</figure>
+								<h4>Nama User</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card shadow box-testimoni">
+								<figure class="figure">
+									<img class="d-block mx-auto foto-testimoni" src="Images/foto-default-user.jpg" width="150">
+								</figure>
+								<h4>Nama User</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card shadow box-testimoni">
+								<figure class="figure">
+									<img class="d-block mx-auto foto-testimoni" src="Images/foto-default-user.jpg" width="150">
+								</figure>
+								<h4>Nama User</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="navigasi-bar">
+		<footer class="container">
+			<a href="#"><img  class="margin-logo-footer" src="images/logo.png" alt="logo" width="80px"></a>
+			<div class="right">
+				<a href=""><img class="logo-contact jaga-jarak-samping" src="images/facebook.png" alt="logo-facebook"></a>
+				<a href=""><img class="logo-contact jaga-jarak-samping" src="images/instagram.png" alt="logo-facebook"></a>
+				<a href=""><img class="logo-contact jaga-jarak-samping" src="images/twitter.png" alt="logo-facebook"></a>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

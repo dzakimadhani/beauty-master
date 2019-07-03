@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VIDEOS - BEAUTY MASTER</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/cooking-master.css">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+	<link href="css/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<script type="text/javascript" src="js/efek-website.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<div id="navbar" class="navigasi-bar sticky-top">
+	    <nav class="navbar navbar-expand-lg">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="#">
+	              <img id="logo" class="margin-logo" src="images/logo.png" alt="logo" width="100px">
+	            </a>
+	        </div>
+	        <div class="navbar-container">
+	          <ul>
+	            <li class="nav-link">
+	              <a class="btn" href="index.html">Home</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link active-link">
+	              <a class="btn" href="video.html">Video</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="blog.html">Blog</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="#">About Us</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="#" data-toggle="modal" data-target="#modalLogin">Log In</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <button class="btn btn-subscribe"><a href="subscribe.html"> Subscribe </a></button>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+  	</div>
+
+	<!-- The Modal -->
+  	<div class="modal fade" id="modalLogin" role="dialog">
+        <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- MODAL LOGIN HEADER -->
+				<div class="modal-header">
+					<div class="row">
+						<h3 class="modal-title w-100 font-weight-bold text-center">LOGIN</h3>
+						<p>Silakan masukkan email dan password akun anda untuk mengakses konten ekslusif</p>
+					</div>
+					
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    	<span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- MODAL LOGIN BODY -->
+                <div class="modal-body mx-3">
+                	<div class="form-group">
+                		<input type="text" name="username" id="username" class="form-control input-lg" placeholder="Email" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
+                	</div>
+                	<div class="float-right"><a href="#" style="font-size: 12px;">lupa kata sandi?</a></div>
+                </div>
+                <!-- MODAL LOGIN FOOTER-->
+                <div class="modal-footer">
+                	<button class="btn btn-block btn-lg modal-regis" data-toggle="modal" data-target="#modalRegis">Registrasi</button>
+                	<br>
+                	<input type="submit" name="login" class="btn btn-block btn-lg btn-login" value="Login">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRegis" role="dialog">
+        <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- MODAL LOGIN HEADER -->
+				<div class="modal-header">
+					<div class="row">
+						<h3 class="modal-title w-100 font-weight-bold text-center">REGISTRASI</h3>
+						<p>Silakan mengisi data diri anda untuk melakukan pendaftaran menjadi member dan mendapatkan akses ke dalam konten eksklusif</p>
+					</div>
+					
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    	<span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- MODAL LOGIN BODY -->
+                <div class="modal-body mx-3">
+                	<div class="form-group">
+                		<input type="text" name="fullname" id="fullname" class="form-control input-lg" placeholder="Full Name" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="text" name="noTelepon" id="noTelepon" class="form-control input-lg" placeholder="Phone Number" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="text" name="email" id="email" class="form-control input-lg" placeholder="Email" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
+                	</div>
+                </div>
+                <!-- MODAL LOGIN FOOTER-->
+                <div class="modal-footer">
+                	<input type="submit" name="registrasi" class="btn btn-block btn-lg btn-login" value="Registrasi">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-halaman-video">
+			<div class="container">
+				<h3 class="judul-header">videos</h3>
+				<center>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</center>
+			</div>
+	</div>
+
+	<div>
+		<div class="body-video">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-4">
+						<div class="card shadow border20 thumbnail-box">
+							<a href="video-play.html">
+								<img class="border20" src="Images/695787.jpg" width="100%" height="250" >
+							</a>
+							<div class="info-box-video border20">
+								<div class="detail-box-video">
+									<h5 class="tipe-box-video">Konten Ekslusive</h5>
+									<a class="judul-box-video" href="video-play.html"><i class='fas fa-video'> judul video yang di upload pengunggah</i></a>
+									<a class="nama-pengunggah" href="video-play.html"><img src="Images/foto-default-user.jpg" width="25"> Nama Pengunggah</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow border20 thumbnail-box">
+							<a href="video-play.html">
+								<img class="border20" src="Images/695787.jpg" width="100%" height="250" >
+							</a>
+							<div class="info-box-video border20">
+								<div class="detail-box-video">
+									<h5 class="tipe-box-video">Konten Ekslusive</h5>
+									<a class="judul-box-video" href="video-cant-play.html"><i class='fas fa-video'> judul video yang di upload pengunggah</i></a>
+									<a class="nama-pengunggah" href="video-cant-play.html"><img src="Images/foto-default-user.jpg" width="25"> Nama Pengunggah</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow border20 thumbnail-box">
+							<a href="video-play.html">
+								<img class="border20" src="Images/695787.jpg" width="100%" height="250" >
+							</a>
+							<div class="info-box-video border20">
+								<div class="detail-box-video">
+									<h5 class="tipe-box-video">Konten Ekslusive</h5>
+									<a class="judul-box-video" href="video-play.html"><i class='fas fa-video'> judul video yang di upload pengunggah</i></a>
+									<a class="nama-pengunggah" href="video-play.html"><img src="Images/foto-default-user.jpg" width="25"> Nama Pengunggah</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="row">
+
+					<div class="col-md-4">
+						<div class="card shadow border20 thumbnail-box">
+							<a href="video-play.html">
+								<img class="border20" src="Images/695787.jpg" width="100%" height="250" >
+							</a>
+							<div class="info-box-video border20">
+								<div class="detail-box-video">
+									<h5 class="tipe-box-video">Konten Ekslusive</h5>
+									<a class="judul-box-video" href="video-play.html"><i class='fas fa-video'> judul video yang di upload pengunggah</i></a>
+									<a class="nama-pengunggah" href="video-play.html"><img src="Images/foto-default-user.jpg" width="25"> Nama Pengunggah</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow border20 thumbnail-box">
+							<a href="video-play.html">
+								<img class="border20" src="Images/695787.jpg" width="100%" height="250" >
+							</a>
+							<div class="info-box-video border20">
+								<div class="detail-box-video">
+									<h5 class="tipe-box-video">Konten Ekslusive</h5>
+									<a class="judul-box-video" href="video-play.html"><i class='fas fa-video'> judul video yang di upload pengunggah</i></a>
+									<a class="nama-pengunggah" href="video-play.html"><img src="Images/foto-default-user.jpg" width="25"> Nama Pengunggah</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow border20 thumbnail-box">
+							<a href="video-play.html">
+								<img class="border20" src="Images/695787.jpg" width="100%" height="250" >
+							</a>
+							<div class="info-box-video border20">
+								<div class="detail-box-video">
+									<h5 class="tipe-box-video">Konten Ekslusive</h5>
+									<a class="judul-box-video" href="video-play.html"><i class='fas fa-video'> judul video yang di upload pengunggah</i></a>
+									<a class="nama-pengunggah" href="video-play.html"><img src="Images/foto-default-user.jpg" width="25"> Nama Pengunggah</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="row">
+
+					<div class="col-md-4">
+						<div class="card shadow border20 thumbnail-box">
+							<a href="video-play.html">
+								<img class="border20" src="Images/695787.jpg" width="100%" height="250" >
+							</a>
+							<div class="info-box-video border20">
+								<div class="detail-box-video">
+									<h5 class="tipe-box-video">Konten Ekslusive</h5>
+									<a class="judul-box-video" href="video-play.html"><i class='fas fa-video'> judul video yang di upload pengunggah</i></a>
+									<a class="nama-pengunggah" href="video-play.html"><img src="Images/foto-default-user.jpg" width="25"> Nama Pengunggah</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow border20 thumbnail-box">
+							<a href="video-play.html">
+								<img class="border20" src="Images/695787.jpg" width="100%" height="250" >
+							</a>
+							<div class="info-box-video border20">
+								<div class="detail-box-video">
+									<h5 class="tipe-box-video">Konten Ekslusive</h5>
+									<a class="judul-box-video" href="video-play.html"><i class='fas fa-video'> judul video yang di upload pengunggah</i></a>
+									<a class="nama-pengunggah" href="video-play.html"><img src="Images/foto-default-user.jpg" width="25"> Nama Pengunggah</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow border20 thumbnail-box">
+							<a href="video-play.html">
+								<img class="border20" src="Images/695787.jpg" width="100%" height="250" >
+							</a>
+							<div class="info-box-video border20">
+								<div class="detail-box-video">
+									<h5 class="tipe-box-video">Konten Ekslusive</h5>
+									<a class="judul-box-video" href="video-play.html"><i class='fas fa-video'> judul video yang di upload pengunggah</i></a>
+									<a class="nama-pengunggah" href="video-play.html"><img src="Images/foto-default-user.jpg" width="25"> Nama Pengunggah</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="navigasi-bar">
+		<footer class="container">
+			<a href="#"><img  class="margin-logo-footer" src="images/logo.png" alt="logo" width="80px"></a>
+			<div class="right">
+				<a href=""><img class="logo-contact jaga-jarak-samping" src="images/facebook.png" alt="logo-facebook"></a>
+				<a href=""><img class="logo-contact jaga-jarak-samping" src="images/instagram.png" alt="logo-facebook"></a>
+				<a href=""><img class="logo-contact jaga-jarak-samping" src="images/twitter.png" alt="logo-facebook"></a>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

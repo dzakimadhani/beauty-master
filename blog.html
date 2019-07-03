@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLOG - BEAUTY MASTER</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/cooking-master.css">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+	<link href="css/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/efek-website.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<div id="navbar" class="navigasi-bar sticky-top">
+	    <nav class="navbar navbar-expand-lg">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="#">
+	              <img id="logo" class="margin-logo" src="images/logo.png" alt="logo" width="100px">
+	            </a>
+	        </div>
+	        <div class="navbar-container">
+	          <ul>
+	            <li class="nav-link">
+	              <a class="btn" href="index.html">Home</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="video.html">Video</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link active-link">
+	              <a class="btn" href="blog.html">Blog</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="#">About Us</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <a class="btn" href="#" data-toggle="modal" data-target="#modalLogin">Log In</a>
+	              <div class="underline"></div>
+	            </li>
+	            <li class="nav-link">
+	              <button class="btn btn-subscribe"><a href="subscribe.html"> Subscribe </a></button>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+  	</div>
+
+	<!-- The Modal -->
+  	<div class="modal fade" id="modalLogin" role="dialog">
+        <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- MODAL LOGIN HEADER -->
+				<div class="modal-header">
+					<div class="row">
+						<h3 class="modal-title w-100 font-weight-bold text-center">LOGIN</h3>
+						<p>Silakan masukkan email dan password akun anda untuk mengakses konten ekslusif</p>
+					</div>
+					
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    	<span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- MODAL LOGIN BODY -->
+                <div class="modal-body mx-3">
+                	<div class="form-group">
+                		<input type="text" name="username" id="username" class="form-control input-lg" placeholder="Email" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
+                	</div>
+                	<div class="float-right"><a href="#" style="font-size: 12px;">lupa kata sandi?</a></div>
+                </div>
+                <!-- MODAL LOGIN FOOTER-->
+                <div class="modal-footer">
+                	<button class="btn btn-block btn-lg modal-regis" data-toggle="modal" data-target="#modalRegis">Registrasi</button>
+                	<br>
+                	<input type="submit" name="login" class="btn btn-block btn-lg btn-login" value="Login">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRegis" role="dialog">
+        <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- MODAL LOGIN HEADER -->
+				<div class="modal-header">
+					<div class="row">
+						<h3 class="modal-title w-100 font-weight-bold text-center">REGISTRASI</h3>
+						<p>Silakan mengisi data diri anda untuk melakukan pendaftaran menjadi member dan mendapatkan akses ke dalam konten eksklusif</p>
+					</div>
+					
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    	<span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- MODAL LOGIN BODY -->
+                <div class="modal-body mx-3">
+                	<div class="form-group">
+                		<input type="text" name="fullname" id="fullname" class="form-control input-lg" placeholder="Full Name" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="text" name="noTelepon" id="noTelepon" class="form-control input-lg" placeholder="Phone Number" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="text" name="email" id="email" class="form-control input-lg" placeholder="Email" required>
+                	</div>
+                	<div class="form-group">
+                		<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
+                	</div>
+                </div>
+                <!-- MODAL LOGIN FOOTER-->
+                <div class="modal-footer">
+                	<input type="submit" name="registrasi" class="btn btn-block btn-lg btn-login" value="Registrasi">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-halaman-blog">
+		<div class="container">
+			<h3 class="judul-header">blog</h3>
+			<center>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</center>
+		</div>
+
+	</div>
+
+	<div>
+		<div class="blog-background">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 daftar-blog">
+						<div class="col box-blog">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="Images/gambar-blog.jpg" width="100%">
+								</div>
+								<div class="col-md-8">
+									<div class="judul-daftar-blog">
+										<h3>keistimewaan berwudhu untuk kecantikan wajah</h3>
+									</div>
+									<div class="tanggal-daftar-blog">
+										<p><i class="fa fa-calendar"></i> 28 Juni 2019  /  <i class="fa fa-user"></i>  admin</p>
+									</div>
+									<div class="isi-daftar-blog">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ...</p>
+									</div>
+									<div class="read-more-blog">
+										<a class="btn read-more" href="isi-blog.html">read more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col box-blog">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="Images/gambar-blog.jpg" width="100%">
+								</div>
+								<div class="col-md-8">
+									<div class="judul-daftar-blog">
+										<h3>keistimewaan berwudhu untuk kecantikan wajah</h3>
+									</div>
+									<div class="tanggal-daftar-blog">
+										<p><i class="fa fa-calendar"></i> 28 Juni 2019  /  <i class="fa fa-user"></i>  admin</p>
+									</div>
+									<div class="isi-daftar-blog">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ...</p>
+									</div>
+									<div class="read-more-blog">
+										<a class="btn read-more" href="isi-blog.html">read more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col box-blog">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="Images/gambar-blog.jpg" width="100%">
+								</div>
+								<div class="col-md-8">
+									<div class="judul-daftar-blog">
+										<h3>keistimewaan berwudhu untuk kecantikan wajah</h3>
+									</div>
+									<div class="tanggal-daftar-blog">
+										<p><i class="fa fa-calendar"></i> 28 Juni 2019  /  <i class="fa fa-user"></i>  admin</p>
+									</div>
+									<div class="isi-daftar-blog">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ...</p>
+									</div>
+									<div class="read-more-blog">
+										<a class="btn read-more" href="isi-blog.html">read more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-3">
+						<div class="cari-blog">
+							<div class="input-group">
+							    <input type="text" class="form-control" placeholder="Search this blog">
+							    <div class="input-group-append">
+							    	<button class="btn btn-cari-blog" type="button">
+							    		<i class="fa fa-search"></i>
+							    	</button>
+							    </div>
+							</div>
+						</div>
+						<div class="kategori-blog">
+							kategori
+						</div>
+						<div class="daftar-kategori-blog">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><a href="#">lorem</a></li>
+								<li class="list-group-item"><a href="#">lorem</a></li>
+								<li class="list-group-item"><a href="#">lorem</a></li>
+								<li class="list-group-item"><a href="#">lorem</a></li>
+							</ul>
+						</div>
+						<div class="kategori-blog">
+							recent post
+						</div>
+						<div class="daftar-kategori-blog">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><a href="#">lorem</a></li>
+								<li class="list-group-item"><a href="#">lorem</a></li>
+								<li class="list-group-item"><a href="#">lorem</a></li>
+								<li class="list-group-item"><a href="#">lorem</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="navigasi-bar">
+		<footer class="container">
+			<a href="#"><img  class="margin-logo-footer" src="images/logo.png" alt="logo" width="80px"></a>
+			<div class="right">
+				<a href=""><img class="logo-contact jaga-jarak-samping" src="images/facebook.png" alt="logo-facebook"></a>
+				<a href=""><img class="logo-contact jaga-jarak-samping" src="images/instagram.png" alt="logo-facebook"></a>
+				<a href=""><img class="logo-contact jaga-jarak-samping" src="images/twitter.png" alt="logo-facebook"></a>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
